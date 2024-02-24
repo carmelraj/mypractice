@@ -1,0 +1,47 @@
+.Header {
+    ul{ 
+        margin: 0;
+        padding: 20px;
+        background: #525252;
+    }
+    ul li{
+        display: inline-block;
+        list-style: none;  
+        margin: 0 15px 0 0;      
+        font-size: 16px;        
+    }
+    ul li:last-child{
+        margin: 0;
+    }
+    ul li a{
+        color: #FFFFFF;
+        padding: 5px 10px;        
+        text-decoration: none;
+    }
+    ul li.parent{
+        position: relative;
+    }
+    ul li > ul{
+        display: none;
+        position: absolute;
+        top:26px; left: 0;
+        background: gray;
+        z-index: 999;
+    }
+    ul li > ul li{
+        padding: 0;
+        width: 100%;
+        margin: 0;
+    }
+    ul li.parent:hover > ul{
+        display: inline-block;
+        width: 115px;
+        padding: 5px 0;
+    }
+    ul li.parent:hover > ul li a{        
+        padding: 10px;
+    }
+    ul li.parent:hover > ul li:hover a{
+        color: #000;
+    }
+}
