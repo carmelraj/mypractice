@@ -24,6 +24,7 @@ const Header = () => (
       </li>
       <li><NavLink to={'/datepicker'}>Datepicker</NavLink></li>
       <li><Link to={'/search-cities'}>Search cities</Link></li>
+      <li><Link to={'/throtelling'}>Thotelling</Link></li>      
       <li><NavLink to={'/sitemap'}>Sitemap</NavLink></li>
     </ul>
   </div>

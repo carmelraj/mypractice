@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React,{useState, useEffect} from 'react';
 import PropTypes from 'prop-types';
 import './SearchCities.css';
 import Debouncing from '../../Hookes/debouncing';
@@ -8,17 +8,14 @@ const SearchCities = () => {
   const [data,setData] = useState(null)
   const [citiesName,setCitiesName]= useState('')
   const result = Debouncing(search);
-  // console.log('final resulttttttttt',data)
-  console.log('vvvvvvvv',result)
-  const searchCities = (event)=> {
-    // const {value} = event.target;
-      setSearch(event.target.value)
-     
-      const fresult = cities?.cities?.filter((city)=>
-      city.denominazione_ita_altra.toLowerCase().includes(result.toLowerCase()));
-      setData(fresult)
-      console.log('fresult',fresult)
-  }
+
+  useEffect(()=>{
+    const fresult = cities?.cities?.filter((city)=>
+    city.denominazione_ita_altra.toLowerCase().includes(result.toLowerCase()));
+    setData(fresult)
+  },[result])
+ 
+
 
   const selectCity = (item) =>{
     setCitiesName(item)
@@ -26,7 +23,7 @@ const SearchCities = () => {
     setSearch('')
   }
   return(<div className="SearchCities" data-testid="SearchCities">
-    <input type="text" placeholder='Search' name="search" value={search} onChange={searchCities} />
+    <input type="text" placeholder='Search' name="search" value={search} onChange={(e)=>setSearch(e.target.value)} />
     { result &&
     <ul>
       {data?.map((item,index)=>{

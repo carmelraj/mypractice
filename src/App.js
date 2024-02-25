@@ -13,6 +13,7 @@ import LazyDatepicker from './Pages/datepickers/datepicker';
 import LazyFormMultiStep from './Pages/Forms/ReactForms/FormMultiStep/FormMultiStep';
 import LazySingleFormMultipleStep from './Pages/Forms/ReactForms/SingleFormMultipleStep/SingleFormMultipleStep';
 import LazySearchCities from './Pages/SearchCities/SearchCities';
+import LazyThrotelling from './Pages/throtelling/throtelling';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
                 <Route path='/form-multisteps' element={<LazyLayout><LazyFormMultiStep/></LazyLayout>} />
                 <Route path='/single-form-multi-stps' element={<LazyLayout><LazySingleFormMultipleStep/></LazyLayout>} />
                 <Route path='/search-cities'element={<LazyLayout><LazySearchCities/></LazyLayout>} />
+                <Route path='/throtelling' element={<LazyLayout><LazyThrotelling/></LazyLayout>} />
             </Routes>
         </BrowserRouter>
     </div>
