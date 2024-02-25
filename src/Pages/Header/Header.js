@@ -19,10 +19,11 @@ const Header = () => (
               <li><Link to={'/mui-hookes'}>Form MUI Hookes</Link></li>
               <li><Link to={'/formik'}>Form Formik</Link></li>
               <li><Link to={'/form-multisteps'}>Ract Form Multi Step</Link></li>
-              <li><Link to={'/single-form-multi-stps'}>Ract Single Form Multi Step</Link></li>
+              <li><Link to={'/single-form-multi-stps'}>Ract Single Form Multi Step</Link></li>              
           </ul>
       </li>
       <li><NavLink to={'/datepicker'}>Datepicker</NavLink></li>
+      <li><Link to={'/search-cities'}>Search cities</Link></li>
       <li><NavLink to={'/sitemap'}>Sitemap</NavLink></li>
     </ul>
   </div>

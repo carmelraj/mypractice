@@ -12,6 +12,7 @@ import LazySearchMultiFilter from './Pages/SearchMultiFilter/SearchMultiFilter';
 import LazyDatepicker from './Pages/datepickers/datepicker';
 import LazyFormMultiStep from './Pages/Forms/ReactForms/FormMultiStep/FormMultiStep';
 import LazySingleFormMultipleStep from './Pages/Forms/ReactForms/SingleFormMultipleStep/SingleFormMultipleStep';
+import LazySearchCities from './Pages/SearchCities/SearchCities';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
                 <Route path='/datepicker' element={<LazyLayout><LazyDatepicker /></LazyLayout>} />
                 <Route path='/form-multisteps' element={<LazyLayout><LazyFormMultiStep/></LazyLayout>} />
                 <Route path='/single-form-multi-stps' element={<LazyLayout><LazySingleFormMultipleStep/></LazyLayout>} />
+                <Route path='/search-cities'element={<LazyLayout><LazySearchCities/></LazyLayout>} />
             </Routes>
         </BrowserRouter>
     </div>
