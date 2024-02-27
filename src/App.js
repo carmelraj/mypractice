@@ -14,6 +14,7 @@ import LazyFormMultiStep from './Pages/Forms/ReactForms/FormMultiStep/FormMultiS
 import LazySingleFormMultipleStep from './Pages/Forms/ReactForms/SingleFormMultipleStep/SingleFormMultipleStep';
 import LazySearchCities from './Pages/SearchCities/SearchCities';
 import LazyThrotelling from './Pages/throtelling/throtelling';
+import LazyCustomHookesGet from './Pages/CustomHookesGet/CustomHookesGet';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
                 <Route path='/single-form-multi-stps' element={<LazyLayout><LazySingleFormMultipleStep/></LazyLayout>} />
                 <Route path='/search-cities'element={<LazyLayout><LazySearchCities/></LazyLayout>} />
                 <Route path='/throtelling' element={<LazyLayout><LazyThrotelling/></LazyLayout>} />
+                <Route path='/get' element={<LazyLayout><LazyCustomHookesGet/></LazyLayout>} />
             </Routes>
         </BrowserRouter>
     </div>
