@@ -15,6 +15,8 @@ import LazySingleFormMultipleStep from './Pages/Forms/ReactForms/SingleFormMulti
 import LazySearchCities from './Pages/SearchCities/SearchCities';
 import LazyThrotelling from './Pages/throtelling/throtelling';
 import LazyCustomHookesGet from './Pages/CustomHookesGet/CustomHookesGet';
+import LazyUseRefForm from './Pages/UseRefForm/UseRefForm';
+import LazyLocalStorage from './Pages/Storage/LocalStorage/LocalStorage';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 function App() {
   return (
@@ -34,6 +36,8 @@ function App() {
                 <Route path='/search-cities'element={<LazyLayout><LazySearchCities/></LazyLayout>} />
                 <Route path='/throtelling' element={<LazyLayout><LazyThrotelling/></LazyLayout>} />
                 <Route path='/get' element={<LazyLayout><LazyCustomHookesGet/></LazyLayout>} />
+                <Route path='/userref-form' element={<LazyLayout><LazyUseRefForm/></LazyLayout>} />
+                <Route path='/local-storage' element={<LazyLayout><LazyLocalStorage/></LazyLayout>} />
             </Routes>
         </BrowserRouter>
     </div>

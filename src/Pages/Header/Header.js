@@ -25,7 +25,9 @@ const Header = () => (
       <li><NavLink to={'/datepicker'}>Datepicker</NavLink></li>
       <li><Link to={'/search-cities'}>Search cities</Link></li>
       <li><Link to={'/throtelling'}>Thotelling</Link></li>      
-      <li><Link to={'/get'}>Load Data</Link></li>     
+      <li><Link to={'/get'}>Load Data</Link></li>      
+      <li><Link to={'/userref-form'}>UseRef Form</Link></li>
+      <li><Link to={'/local-storage'}>Local Storage</Link></li>
       <li><NavLink to={'/sitemap'}>Sitemap</NavLink></li>
     </ul>
   </div>
