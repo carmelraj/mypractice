@@ -29,7 +29,7 @@ const GoogleMapMarker = () => {
   const [map, setMap] = useState(null);
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
-    googleMapsApiKey: "AIzaSyCpqZbDZ9cyhcTa4FCSybofE0tyh0a2VKU",
+    googleMapsApiKey: "",
   });
 
   const onLoad = useCallback(function callback(map) {
