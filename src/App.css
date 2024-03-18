@@ -2,3 +2,8 @@
     width: 1200px;
     margin: 0 auto;
 }
+
+.useSearch{
+    width: 270px;
+    border:1px solid red;
+}

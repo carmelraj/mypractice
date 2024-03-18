@@ -19,6 +19,10 @@ import LazyUseRefForm from "./Pages/UseRefForm/UseRefForm";
 import LazyLocalStorage from "./Pages/Storage/LocalStorage/LocalStorage";
 import LazyGoogleMaApi from "./Pages/GoogleMaAPI/GoogleMaAPI";
 import LazyGoogleMapMarker from "./Pages/GoogleMapMarker/GoogleMapMarker";
+import LazyExcersieone from "./Pages/Excersie/Excersieone/Excersieone";
+import LazyExcersieTwo from "./Pages/Excersie/ExcersieTwo/ExcersieTwo";
+import LazyExcersieThree from "./Pages/Excersie/ExcersieThree/ExcersieThree";
+import LazyExcersieFour from "./Pages/Excersie/ExcersieFour/ExcersieFour";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 function App() {
   return (
@@ -158,6 +162,38 @@ function App() {
             element={
               <LazyLayout>
                 <LazyGoogleMapMarker />
+              </LazyLayout>
+            }
+          />
+          <Route
+            path="/excersieone"
+            element={
+              <LazyLayout>
+                <LazyExcersieone />
+              </LazyLayout>
+            }
+          />
+          <Route
+            path="/excersitwo"
+            element={
+              <LazyLayout>
+                <LazyExcersieTwo />
+              </LazyLayout>
+            }
+          />
+          <Route
+            path="/excersithree"
+            element={
+              <LazyLayout>
+                <LazyExcersieThree />
+              </LazyLayout>
+            }
+          />
+          <Route
+            path="/excersefour"
+            element={
+              <LazyLayout>
+                <LazyExcersieFour />
               </LazyLayout>
             }
           />

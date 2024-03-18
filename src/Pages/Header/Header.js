@@ -77,6 +77,23 @@ const Header = () => (
       <li>
         <Link to={"/google-map"}>Google Map API</Link>
       </li>
+      <li className="parent">
+        <NavLink to={"#"}>Excersie</NavLink>
+        <ul>
+          <li>
+            <Link to={"/excersieone"}>Excersie One</Link>
+          </li>
+          <li>
+            <Link to={"/excersitwo"}>Excersie Two</Link>
+          </li>
+          <li>
+            <Link to={"/excersithree"}>Excersie Three</Link>
+          </li>
+          <li>
+            <Link to={"/excersefour"}>Excersie Four</Link>
+          </li>
+        </ul>
+      </li>
       <li>
         <NavLink to={"/sitemap"}>Sitemap</NavLink>
       </li>
