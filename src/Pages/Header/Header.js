@@ -47,8 +47,20 @@ const Header = () => (
       <li>
         <NavLink to={"/datepicker"}>Datepicker</NavLink>
       </li>
-      <li>
-        <Link to={"/search-cities"}>Search cities</Link>
+
+      <li className="parent">
+        <NavLink to={"#"}>Hookes</NavLink>
+        <ul>
+          <li>
+            <Link to={"/search-cities"}>Debouncing</Link>
+          </li>
+          <li>
+            <Link to={"/reducer"}>Reducer</Link>
+          </li>
+          <li>
+            <Link to={"/todo"}>Todo Reducer</Link>
+          </li>
+        </ul>
       </li>
       <li>
         <Link to={"/throtelling"}>Thotelling</Link>
