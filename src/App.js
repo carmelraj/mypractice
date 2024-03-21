@@ -23,6 +23,10 @@ import LazyExcersieone from "./Pages/Excersie/Excersieone/Excersieone";
 import LazyExcersieTwo from "./Pages/Excersie/ExcersieTwo/ExcersieTwo";
 import LazyExcersieThree from "./Pages/Excersie/ExcersieThree/ExcersieThree";
 import LazyExcersieFour from "./Pages/Excersie/ExcersieFour/ExcersieFour";
+import LazySearchParam from "./Pages/Home/SearchParam/SearchParam";
+import LazyParams from "./Pages/Home/params/params";
+import LazyHomeSearchFilter from "./Pages/Home/HomeSearchFilter/HomeSearchFilter";
+import LazyAutoSearch from "./Pages/Home/AutoSearch/AutoSearch";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 function App() {
   return (
@@ -194,6 +198,38 @@ function App() {
             element={
               <LazyLayout>
                 <LazyExcersieFour />
+              </LazyLayout>
+            }
+          />
+          <Route
+            path="/searchparams"
+            element={
+              <LazyLayout>
+                <LazySearchParam />
+              </LazyLayout>
+            }
+          />
+          <Route
+            path="/params/:category"
+            element={
+              <LazyLayout>
+                <LazyParams />
+              </LazyLayout>
+            }
+          />
+          <Route
+            path="/home-search-filter"
+            element={
+              <LazyLayout>
+                <LazyHomeSearchFilter />
+              </LazyLayout>
+            }
+          />
+          <Route
+            path="/auto-search"
+            element={
+              <LazyLayout>
+                <LazyAutoSearch />
               </LazyLayout>
             }
           />

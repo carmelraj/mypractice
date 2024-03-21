@@ -1,0 +1,5 @@
+.AutoSearch ul{margin: 0; padding: 0; background: #F3F3F3;}
+.AutoSearch li {list-style-type: none;}
+.AutoSearch li:hover{background: #D6D6D6;}
+.AutoSearch li {padding: 10px;}
+.AutoSearch li.active{background: #D6D6D6;}
