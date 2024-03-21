@@ -10,6 +10,8 @@ const HomPage = () => (
     <Link to={"/home-search-filter"}>Search Filter</Link>
     <br></br>
     <Link to={"/auto-search"}>Auto Search</Link>
+    <br></br>
+    <Link to={"/home-todos"}>Todos</Link>
   </div>
 );
 

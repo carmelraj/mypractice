@@ -60,6 +60,9 @@ const Header = () => (
           <li>
             <Link to={"/todo"}>Todo Reducer</Link>
           </li>
+          <li>
+            <Link to={"/home-todos"}>Todos</Link>
+          </li>
         </ul>
       </li>
       <li>

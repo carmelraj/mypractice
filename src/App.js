@@ -29,6 +29,7 @@ import LazyHomeSearchFilter from "./Pages/Home/HomeSearchFilter/HomeSearchFilter
 import LazyAutoSearch from "./Pages/Home/AutoSearch/AutoSearch";
 import UseReduce from "./Hookes/useReduce";
 import TodoUseReduce from "./Hookes/todoUseReduce";
+import HomeTodos from "./Pages/Home/HomeTodos/HomeTodos";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 function App() {
   return (
@@ -248,6 +249,14 @@ function App() {
             element={
               <LazyLayout>
                 <TodoUseReduce />
+              </LazyLayout>
+            }
+          />
+          <Route
+            path="/home-todos"
+            element={
+              <LazyLayout>
+                <HomeTodos />
               </LazyLayout>
             }
           />
