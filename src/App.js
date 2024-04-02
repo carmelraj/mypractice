@@ -30,6 +30,7 @@ import LazyAutoSearch from "./Pages/Home/AutoSearch/AutoSearch";
 import UseReduce from "./Hookes/useReduce";
 import TodoUseReduce from "./Hookes/todoUseReduce";
 import HomeTodos from "./Pages/Home/HomeTodos/HomeTodos";
+import LazyExerciseFive from "./Pages/Excersie/ExerciseFive/ExerciseFive";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 function App() {
   return (
@@ -201,6 +202,14 @@ function App() {
             element={
               <LazyLayout>
                 <LazyExcersieFour />
+              </LazyLayout>
+            }
+          />
+          <Route
+            path="/exerciseFive"
+            element={
+              <LazyLayout>
+                <LazyExerciseFive />
               </LazyLayout>
             }
           />
