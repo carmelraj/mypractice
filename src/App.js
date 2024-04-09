@@ -35,6 +35,7 @@ import LazyImageUpload from "./Pages/Home/ImageUpload/ImageUpload";
 import LazyPaginationOne from "./Pages/Home/PaginationOne/PaginationOne";
 import LazyPaginationTwo from "./Pages/Home/PaginationTwo/PaginationTwo";
 import LazyPaginationThree from "./Pages/Home/PaginationThree/PaginationThree";
+import LazyImperative from "./Pages/Imperative/Imperative";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 function App() {
   return (
@@ -82,14 +83,7 @@ function App() {
                 </LazyLayout>
               }
             />
-            <Route
-              path="home-todos"
-              element={
-                <LazyLayout>
-                  <HomeTodos />
-                </LazyLayout>
-              }
-            />
+
             <Route
               path="image-upload"
               element={
@@ -196,6 +190,7 @@ function App() {
               </LazyLayout>
             }
           />
+
           <Route
             path="/search-cities"
             element={
@@ -204,6 +199,40 @@ function App() {
               </LazyLayout>
             }
           />
+          <Route>
+            <Route
+              path="/reducer"
+              element={
+                <LazyLayout>
+                  <UseReduce />
+                </LazyLayout>
+              }
+            />
+            <Route
+              path="/todo"
+              element={
+                <LazyLayout>
+                  <TodoUseReduce />
+                </LazyLayout>
+              }
+            />
+            <Route
+              path="home-todos"
+              element={
+                <LazyLayout>
+                  <HomeTodos />
+                </LazyLayout>
+              }
+            />
+            <Route
+              path="imperative"
+              element={
+                <LazyLayout>
+                  <LazyImperative />
+                </LazyLayout>
+              }
+            />
+          </Route>
           <Route
             path="/throtelling"
             element={
@@ -289,23 +318,6 @@ function App() {
             element={
               <LazyLayout>
                 <LazyExerciseFive />
-              </LazyLayout>
-            }
-          />
-
-          <Route
-            path="/reducer"
-            element={
-              <LazyLayout>
-                <UseReduce />
-              </LazyLayout>
-            }
-          />
-          <Route
-            path="/todo"
-            element={
-              <LazyLayout>
-                <TodoUseReduce />
               </LazyLayout>
             }
           />

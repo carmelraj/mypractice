@@ -3,6 +3,7 @@ const Product = ({ data }) => {
   return (
     // <div className="product">
     //   <div className="container">
+
     <div key={data?.id} className="productList">
       <figure>
         <img src={data?.thumbnail} alt={data?.thumbnail} />

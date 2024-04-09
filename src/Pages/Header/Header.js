@@ -63,6 +63,9 @@ const Header = () => (
           <li>
             <Link to={"/home-todos"}>Todos</Link>
           </li>
+          <li>
+            <Link to={"/imperative"}>Use Imperative</Link>
+          </li>
         </ul>
       </li>
       <li>
