@@ -11,7 +11,14 @@ const HomPage = () => (
     <br></br>
     <Link to={"/auto-search"}>Auto Search</Link>
     <br></br>
-    <Link to={"/home-todos"}>Todos</Link>
+    <Link to={"/home-todos"}>Todos</Link> <br></br>
+    <Link to={"/image-upload"}>Image Upload</Link>
+    <br></br>
+    <Link to={"/pagination-one"}>Pagination One</Link>
+    <br></br>
+    <Link to={"/pagination-two"}>Pagination Two</Link>
+    <br></br>
+    <Link to={"/pagination-three"}>Pagination Three</Link>
   </div>
 );
 

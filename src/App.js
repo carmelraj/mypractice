@@ -31,20 +31,99 @@ import UseReduce from "./Hookes/useReduce";
 import TodoUseReduce from "./Hookes/todoUseReduce";
 import HomeTodos from "./Pages/Home/HomeTodos/HomeTodos";
 import LazyExerciseFive from "./Pages/Excersie/ExerciseFive/ExerciseFive";
+import LazyImageUpload from "./Pages/Home/ImageUpload/ImageUpload";
+import LazyPaginationOne from "./Pages/Home/PaginationOne/PaginationOne";
+import LazyPaginationTwo from "./Pages/Home/PaginationTwo/PaginationTwo";
+import LazyPaginationThree from "./Pages/Home/PaginationThree/PaginationThree";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route
-            path="/"
-            element={
-              <LazyLayout>
-                <LazyHomPage />
-              </LazyLayout>
-            }
-          />
+          <Route path="/">
+            <Route
+              index
+              element={
+                <LazyLayout>
+                  <LazyHomPage />
+                </LazyLayout>
+              }
+            />
+            <Route
+              path="searchparams"
+              element={
+                <LazyLayout>
+                  <LazySearchParam />
+                </LazyLayout>
+              }
+            />
+            <Route
+              path="/params/:category"
+              element={
+                <LazyLayout>
+                  <LazyParams />
+                </LazyLayout>
+              }
+            />
+            <Route
+              path="home-search-filter"
+              element={
+                <LazyLayout>
+                  <LazyHomeSearchFilter />
+                </LazyLayout>
+              }
+            />
+            <Route
+              path="auto-search"
+              element={
+                <LazyLayout>
+                  <LazyAutoSearch />
+                </LazyLayout>
+              }
+            />
+            <Route
+              path="home-todos"
+              element={
+                <LazyLayout>
+                  <HomeTodos />
+                </LazyLayout>
+              }
+            />
+            <Route
+              path="image-upload"
+              element={
+                <LazyLayout>
+                  <LazyImageUpload />
+                </LazyLayout>
+              }
+            />
+            <Route
+              path="pagination-one"
+              element={
+                <LazyLayout>
+                  <LazyPaginationOne />
+                </LazyLayout>
+              }
+            />
+            <Route
+              path="pagination-two"
+              element={
+                <LazyLayout>
+                  <LazyPaginationTwo />
+                </LazyLayout>
+              }
+            />
+            <Route
+              path="pagination-three"
+              element={
+                <LazyLayout>
+                  <LazyPaginationThree />
+                </LazyLayout>
+              }
+            />
+          </Route>
+
           <Route
             path="/form-hookes"
             element={
@@ -213,38 +292,7 @@ function App() {
               </LazyLayout>
             }
           />
-          <Route
-            path="/searchparams"
-            element={
-              <LazyLayout>
-                <LazySearchParam />
-              </LazyLayout>
-            }
-          />
-          <Route
-            path="/params/:category"
-            element={
-              <LazyLayout>
-                <LazyParams />
-              </LazyLayout>
-            }
-          />
-          <Route
-            path="/home-search-filter"
-            element={
-              <LazyLayout>
-                <LazyHomeSearchFilter />
-              </LazyLayout>
-            }
-          />
-          <Route
-            path="/auto-search"
-            element={
-              <LazyLayout>
-                <LazyAutoSearch />
-              </LazyLayout>
-            }
-          />
+
           <Route
             path="/reducer"
             element={
@@ -258,14 +306,6 @@ function App() {
             element={
               <LazyLayout>
                 <TodoUseReduce />
-              </LazyLayout>
-            }
-          />
-          <Route
-            path="/home-todos"
-            element={
-              <LazyLayout>
-                <HomeTodos />
               </LazyLayout>
             }
           />

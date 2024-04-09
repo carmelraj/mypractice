@@ -1,0 +1,29 @@
+.product{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.product .container{
+    width: 100%;
+    display: flex;    
+    flex-wrap: wrap;    
+    flex-direction: row;
+}
+.productList{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    margin: 0 50px 50px 0;
+}
+ .productList:nth-child(2n+0){
+    margin: 0 0 50px 0 ;
+}
+.productList figure{margin: 0; padding: 0; height: 400px;}
+ .productList figure img{
+    width: 100%; height: 100%;
+}
+.productList p {
+    margin: 0; padding: 20px 0 0 0; font-size: 16px;
+}
