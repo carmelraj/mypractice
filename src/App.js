@@ -12,7 +12,7 @@ import LazySearchMultiFilter from "./Pages/SearchMultiFilter/SearchMultiFilter";
 import LazyDatepicker from "./Pages/datepickers/datepicker";
 import LazyFormMultiStep from "./Pages/Forms/ReactForms/FormMultiStep/FormMultiStep";
 import LazySingleFormMultipleStep from "./Pages/Forms/ReactForms/SingleFormMultipleStep/SingleFormMultipleStep";
-import LazySearchCities from "./Pages/SearchCities/SearchCities";
+import LazySearchCities from "./Pages/Hooks/SearchCities/SearchCities";
 import LazyThrotelling from "./Pages/throtelling/throtelling";
 import LazyCustomHookesGet from "./Pages/CustomHookesGet/CustomHookesGet";
 import LazyUseRefForm from "./Pages/UseRefForm/UseRefForm";
@@ -35,7 +35,8 @@ import LazyImageUpload from "./Pages/Home/ImageUpload/ImageUpload";
 import LazyPaginationOne from "./Pages/Home/PaginationOne/PaginationOne";
 import LazyPaginationTwo from "./Pages/Home/PaginationTwo/PaginationTwo";
 import LazyPaginationThree from "./Pages/Home/PaginationThree/PaginationThree";
-import LazyImperative from "./Pages/Imperative/Imperative";
+import LazyImperative from "./Pages/Hooks/Imperative/Imperative";
+import LazyHoc from "./Pages/Hooks/HOC/HOC";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 function App() {
   return (
@@ -229,6 +230,14 @@ function App() {
               element={
                 <LazyLayout>
                   <LazyImperative />
+                </LazyLayout>
+              }
+            />
+            <Route
+              path="hoc"
+              element={
+                <LazyLayout>
+                  <LazyHoc />
                 </LazyLayout>
               }
             />

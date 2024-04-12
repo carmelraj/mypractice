@@ -7,7 +7,7 @@ const UseImperatives = forwardRef((_, ref) => {
     },
   }));
 
-  return <div>sdsd</div>;
+  return <div></div>;
 });
 
 export default UseImperatives;
